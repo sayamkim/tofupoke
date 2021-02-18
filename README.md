@@ -1,4 +1,4 @@
-# TOFU POKE
+# tofu poke
 
 Experimental playground for learning and messing around with different types of web interactions.
 
