@@ -6,6 +6,15 @@ document.addEventListener('turbolinks:load', () => {
     gsap.to("#clicker", {duration: 3, x: 300});
   }
 
-  let initClickEvents = document.getElementById('clicker');
-  initClickEvents.addEventListener('click', turnRed);
+  let initChangeRed = document.getElementById('clicker');
+  initChangeRed.addEventListener('click', turnRed);
+
+  let bounceTofu = () => {
+    let tofu = document.getElementsByClassName('tofu');
+    gsap.to(tofu, { duration: 4, ease: "bounce.in", x: 500 });
+    gsap.to(tofu, { duration: 4, ease: "back.out(1.7)", y: -100 });
+  }
+
+  let initTofuBounce = document.getElementById('bounce');
+  initTofuBounce.addEventListener('click', bounceTofu);
 });
