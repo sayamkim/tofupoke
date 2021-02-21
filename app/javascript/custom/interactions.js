@@ -11,7 +11,7 @@ document.addEventListener('turbolinks:load', () => {
 
   let bounceTofu = () => {
     let tofu = document.getElementsByClassName('tofu');
-    gsap.to(tofu, { duration: 4, ease: "bounce.in", x: 500 });
+    gsap.to(tofu, { duration: 4, ease: "bounce.in", x: 300 });
     gsap.to(tofu, { duration: 4, ease: "back.out(1.7)", y: -100 });
   }
 
